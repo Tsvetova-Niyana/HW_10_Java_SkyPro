@@ -22,8 +22,13 @@ public class Main {
         В качестве данных для задачи используйте "Ivanov Ivan Ivanovich".
          */
         System.out.println("Задание 1");
-        System.out.println("Задание 1");
-        System.out.println("Задание 1");
+
+        String lastName = "Ivanov";
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String fullName = lastName + " " + firstName + " " + middleName;
+
+        System.out.println("ФИО сотрудника — " + fullName);
     }
 
     private static void task2() {
@@ -38,6 +43,14 @@ public class Main {
 
         Результат программы выведите в консоль в формате: "Данные ФИО сотрудника для заполнения отчета — …"
          */
+        System.out.println("\nЗадание 2");
+
+        String lastName = "Ivanov";
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String fullName = lastName + " " + firstName + " " + middleName;
+
+        System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullName.toUpperCase());
     }
 
     private static void task3() {
@@ -49,5 +62,13 @@ public class Main {
 
         Выведите результат программы в консоль в формате: «Данные ФИО сотрудника — ...».
          */
+        System.out.println("\nЗадание 3");
+
+        String lastName = "Иванов";
+        String firstName = "Семён";
+        String middleName = "Семёнович";
+        String fullName = lastName + " " + firstName + " " + middleName;
+
+        System.out.println("Данные ФИО сотрудника — " + fullName.replace('ё','е'));
     }
 }
